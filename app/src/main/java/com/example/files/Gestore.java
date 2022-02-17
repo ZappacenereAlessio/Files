@@ -12,20 +12,16 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Gestore {
-    public String leggiFile(String nomeFile,
-                            Context c)
-    {
+    public String leggiFile(String nomeFile, Context c) {
+
         StringBuilder sb = new StringBuilder();
-        String testodarestituire;
+        String testoDaRestituire;
+
         try {
-            BufferedReader fileDaLeggere =
-                    new BufferedReader(
-                            new InputStreamReader
-                                    (c.openFileInput(nomeFile)));
 
-
-            while ((testodarestituire = fileDaLeggere.readLine()) != null) {
-                sb.append(testodarestituire + "\n");
+            BufferedReader fileDaLeggere = new BufferedReader(new InputStreamReader(c.openFileInput(nomeFile)));
+            while ((testoDaRestituire = fileDaLeggere.readLine()) != null) {
+                sb.append(testoDaRestituire + "\n");
 
             }
         } catch (FileNotFoundException e) {
@@ -36,16 +32,20 @@ public class Gestore {
         return sb.toString();
 
     }
-    public String scriviFile(String nomeFile, Context c)
-    {
-        String esito;
-        FileOutputStream fileO;
-        String testodascrivere = "Questo è il testo che voglio scrivere";
-        try {
-            fileO = c.openFileOutput(nomeFile, Context.MODE_PRIVATE);
-            fileO.write(testodascrivere.getBytes());
 
-            fileO.close();
+    public String scriviFile(String nomeFile, Context c) {
+
+        String esito;
+        FileOutputStream file;
+
+        String testoDaScrivere = "Questo è il testo che voglio scrivere";
+
+        try {
+
+            file = c.openFileOutput(nomeFile, Context.MODE_PRIVATE);
+            file.write(testoDaScrivere.getBytes());
+            file.close();
+
             esito = "File scritto correttamente";
 
         } catch (FileNotFoundException e) {

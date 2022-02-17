@@ -8,56 +8,47 @@
 
 
     <EditText
-        android:layout_width="351dp"
-        android:layout_height="172dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
+        android:id="@+id/editText"
+        android:layout_width="315dp"
+        android:layout_height="75dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.028" />
+        app:layout_constraintVertical_bias="0.067" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="43dp"
-        android:layout_marginTop="201dp"
-        android:layout_marginEnd="274dp"
-        android:layout_marginBottom="482dp"
-        android:text="Button"
+        android:text="Scrivi"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.275" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="205dp"
-        android:layout_marginBottom="478dp"
-        android:text="Button"
+        android:text="Leggi"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.807"
+        app:layout_constraintHorizontal_bias="0.851"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.275" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="173dp"
-        android:layout_height="176dp"
-        android:layout_marginStart="119dp"
-        android:layout_marginEnd="119dp"
+        android:layout_width="299dp"
+        android:layout_height="375dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.684" />
+        app:layout_constraintVertical_bias="0.862" />
 </androidx.constraintlayout.widget.ConstraintLayout>
