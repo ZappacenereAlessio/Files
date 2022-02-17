@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         leggiBtn = findViewById(R.id.button2);
         scriviBtn = findViewById(R.id.button);
         nomeFile = findViewById(R.id.editText);
-        text = findViewById(R.id.textView);
 
         Gestore gestore = new Gestore();
         Context context = getApplicationContext();
