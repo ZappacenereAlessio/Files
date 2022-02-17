@@ -1,6 +1,7 @@
 package com.example.files;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.util.Log;
 
 import androidx.arch.core.internal.SafeIterableMap;
@@ -9,6 +10,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 
 public class Gestore {
@@ -54,6 +56,14 @@ public class Gestore {
             esito = "Impossibile scrivere il file!!";
         }
         return esito;
+    }
+
+    public String leggiFileRes(Context c){
+        Resources res;
+        res = c.getResources();
+        InputStream fileLetto;
+        fileLetto = res.openRawResource();
+
     }
 
 }
