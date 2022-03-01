@@ -7,6 +7,7 @@ import android.util.Log;
 import androidx.arch.core.internal.SafeIterableMap;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -62,8 +63,9 @@ public class Gestore {
         Resources res;
         res = c.getResources();
         InputStream fileLetto;
-        fileLetto = res.openRawResource();
+        fileLetto = res.openRawResource(R.raw.Brani);
 
+        return "";
     }
 
 }
